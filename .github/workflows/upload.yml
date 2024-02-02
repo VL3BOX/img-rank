@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload to Cloudflare R2
+      - name: Setup Cloudflare R2 Rclone
         uses: AnimMouse/setup-rclone@main
         with:
           rclone_config: ${{ secrets.CF_RCLONE_CONFIG }} #base64
